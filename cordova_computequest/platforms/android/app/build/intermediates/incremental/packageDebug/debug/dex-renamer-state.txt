@@ -1,0 +1,4 @@
+#Tue Nov 05 13:27:27 EST 2019
+base.0=/home/loicbtd/project/cours/programmation-mobile_local/projet-cordova/computequest-2019/cordova_computequest/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
