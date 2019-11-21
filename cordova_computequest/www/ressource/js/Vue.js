@@ -15,7 +15,7 @@ var config = {
         update: update
     }
 };
-
+var vitesse = 200;
 var player;
 var stars;
 var bombs;
@@ -51,13 +51,20 @@ function create() {
     platforms.create(50, 250, 'ground');
     platforms.create(750, 220, 'ground');
 
-    // The player and its settings
+    var objets = this.physics.add.group();
+
+
+
+    var objet = new Objet(1, 100, 300, objets);
+
     player = this.physics.add.sprite(100, 450, 'dude');
 
     //  Player physics properties. Give the little guy a slight bounce.
     player.setBounce(0.2);
     player.setCollideWorldBounds(true);
 
+    this.physics.add.overlap(player, objets);
+    this.physics.add.collider(objets, platforms);
     //  Our player animations, turning, walking left and walking right.
     this.anims.create({
         key: 'left',
@@ -118,26 +125,31 @@ function create() {
     this.physics.add.collider(stars, platforms);
     this.physics.add.collider(bombs, platforms);
 
+    this.physics.add.overlap(player, objets, ramasserObjet, null, this);
+    function ramasserObjet(player, objet) {
+        objet.disableBody(true, true);
+        vitesse+=100;
+    }
     //  Checks to see if the player overlaps with any of the stars, if he does call the collectStar function
 }
 
 function bas() {
-    player.setVelocityY(200);
+    player.setVelocityY(vitesse);
     player.anims.play('down', true);
 }
 
 function gauche() {
-    player.setVelocityX(-200);
+    player.setVelocityX(-vitesse);
     player.anims.play('left', true);
 }
 
 function haut() {
-    player.setVelocityY(-200);
+    player.setVelocityY(-vitesse);
     player.anims.play('up', true);
 }
 
 function droite(){
-    player.setVelocityX(200);
+    player.setVelocityX(vitesse);
     player.anims.play('right', true);
 }
 
