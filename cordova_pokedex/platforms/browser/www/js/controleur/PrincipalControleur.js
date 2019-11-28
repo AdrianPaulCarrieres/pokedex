@@ -8,17 +8,16 @@
     var naviguer = function() {
         var hash = window.location.hash;
         if(!hash) {
-            acceuilVue = new AccueilVue(document);
-            acceuilVue.afficher();
+            listePokemonVue = new ListePokemonVue();
+            listePokemonVue.afficher();
         }
-        else if(hash.match(/^#page-page1/)) {
-            page1Vue = new Page1Vue();
-            page1Vue.afficher();
-            console.log("dzd");
+        else if(hash.match(/^#page-ajouter-pokemon/)) {
+            ajouterPokemonVue = new AjouterPokemonVue();
+            ajouterPokemonVue.afficher();
         }
-        else if(hash.match(/^#page-page2/)) {
-            page2Vue = new Page2Vue();
-            page2Vue.afficher();
+        else if(hash.match(/^#page-modifier-pokemon/)) {
+            modifierPokemonVue = new ModifierPokemonVue();
+            modifierPokemonVue.afficher();
 
         }        
     }

@@ -31,3 +31,12 @@ $(document).ready(function() {
     $('#toTheTop').tooltip('show');
 });
 // END: toTheTop
+
+
+// BEGIN: mettreAJourValeurSlider
+function mettreAJourValeurSlider(valeur, idElementValeur) {
+    document.getElementById(idElementValeur).innerHTML = valeur;
+}
+
+// END: mettreAJourValeurSlider
+
