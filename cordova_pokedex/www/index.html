@@ -14,13 +14,76 @@
 	
 	<!-- icon -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-<body>
-
 </head>
 <body>
 
-Erreur dans l'app !
 
+
+<!-- Erreur dans l'app !-->
+<nav class="navbar sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
+	<a class="navbar-brand" href="#">
+		<img src="res/img/pokedex_logo.png" width="30" height="30" class="d-inline-block align-top" alt="Logo Pokédex">
+		Pokédex
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarToggler">
+		<ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+		<form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="search" placeholder="Recherche" aria-label="Search">
+			<button class="btn btn-outline-danger my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+		</form>
+	</div>
+</nav>
+<div class="container">
+	<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<div class="row">
+					<img src="https://via.placeholder.com/150" id="icone_pokemon" class="rounded mx-auto d-block" alt="...">
+				</div>
+				<div class="text-center" id="nom-pokemon">
+					Nom du pokemon
+				</div>
+				<div class="row">
+					<div class="col-12 text-center champ-type" id="type_pokemon">
+						type
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 text-center">
+						<button class="col-4 btn bouton-pokemon btn-warning" id="bouton-modifier">Mofidier</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class=" col-12 text-center">
+						<button class="col-4 btn btn-danger bouton-pokemon">Supprimer</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 text-center">
+						<button class=" col-4 btn btn-success bouton-pokemon" id="bouton-son">Son</button>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<img src="..." class="d-block w-100" alt="...">
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script type="javascript">
+		$('.carousel').carousel('pause');
+
+</script>
 <script id="fragment-barre-navigation-haut" type="text/html">
 	<nav class="navbar sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
 		<a class="navbar-brand" href="#">

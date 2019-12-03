@@ -27,3 +27,29 @@
 .badge-pv {
     font-size: 1.2rem;
 }
+
+#icone_pokemon{
+    margin-top: 20px;
+}
+
+.champ-type{
+    padding: 10px;
+    margin-top: 15px;
+    background: #34ce57;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: Arial;
+    color: white;
+}
+
+.bouton-pokemon{
+    margin: 10px;
+}
+
+#bouton-son{
+    margin-bottom: 50px;
+}
+
+#bouton-modifier{
+    margin-top: 50px;
+}

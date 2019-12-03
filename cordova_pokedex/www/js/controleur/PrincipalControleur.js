@@ -8,8 +8,8 @@
     var naviguer = function() {
         var hash = window.location.hash;
         if(!hash) {
-            listePokemonVue = new ListePokemonVue();
-            listePokemonVue.afficher();
+            // listePokemonVue = new ListePokemonVue();
+            // listePokemonVue.afficher();
         }
         else if(hash.match(/^#page-ajouter-pokemon/)) {
             ajouterPokemonVue = new AjouterPokemonVue();
