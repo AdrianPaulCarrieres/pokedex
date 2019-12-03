@@ -8,6 +8,7 @@ Adrian-Paul CARRIÈRES
 
 ## Modèle Pokemon
 Un pokémon possède :
+- un identifiant
 - Un nom
 - Un type
 - Des PV
