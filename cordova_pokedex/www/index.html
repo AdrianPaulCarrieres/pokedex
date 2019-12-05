@@ -24,7 +24,7 @@ Erreur dans l'app
 
 
 <script type="javascript">
-		$('.carousel').carousel('pause');
+
 
 </script>
 
@@ -32,11 +32,11 @@ Erreur dans l'app
 	<div class="container ">
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" ></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
 			</ol>
 			<div class="carousel-inner">
-				<div class="carousel-item active">
+				<div class="carousel-item ">
 					<div class="row">
 						<img src="https://via.placeholder.com/150" id="icone_pokemon" class="rounded mx-auto d-block" alt="...">
 					</div>
@@ -70,12 +70,16 @@ Erreur dans l'app
 						</div>
 					</div>
 				</div>
-				<div class="carousel-item">
-					<div class="row">
-						<canvas id="graphiquePv"></canvas>
+				<div class="carousel-item active">
+					<div class="row justify-content-center align-items-center">
+						<div class="col-8">
+							<canvas id="graphiquePv"></canvas>
+						</div>
 					</div>
-					<div class="row">
-						<canvas id="graphiquePc"></canvas>
+					<div class="row justify-content-center align-items-center">
+						<div class="col-8">
+							<canvas id="graphiquePc"></canvas>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -209,4 +213,4 @@ Erreur dans l'app
 <script src="js/vue/AjouterPokemonVue.js"></script>
 <script src="js/vue/ModifierPokemonVue.js"></script>
 
-<script src="js/controleur/PrincipalControleur.js"></script>
+<script src="js/controleur/ControleurPrincipal.js"></script>
