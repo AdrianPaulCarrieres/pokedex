@@ -3,6 +3,7 @@
     var initialiser = function initialiser() {
         window.addEventListener("hashchange", naviguer);
         naviguer();
+        AOS.init();
     };
 
     var naviguer = function() {
