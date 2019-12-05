@@ -8,8 +8,8 @@
     var naviguer = function() {
         var hash = window.location.hash;
         if(!hash) {
-            // listePokemonVue = new ListePokemonVue();
-            // listePokemonVue.afficher();
+            listePokemonVue = new ListePokemonVue();
+            listePokemonVue.afficher();
         }
         else if(hash.match(/^#page-ajouter-pokemon/)) {
             ajouterPokemonVue = new AjouterPokemonVue();
@@ -18,8 +18,11 @@
         else if(hash.match(/^#page-modifier-pokemon/)) {
             modifierPokemonVue = new ModifierPokemonVue();
             modifierPokemonVue.afficher();
-
-        }        
+        }
+        else if(hash.match(/^#page-detail-pokemon/)) {
+            detailPokemonVue = new DetailPokemon();
+            detailPokemonVue.afficher();
+        }
     }
 
     initialiser();
