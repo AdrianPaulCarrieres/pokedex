@@ -32,6 +32,18 @@ var PokemonDAO = function() {
         console.log("JSON.stringify(listePokemon) : " + JSON.stringify(listePokemon));
     }
 
-    //
+    //Ajouter un pokemon
+    this.ajouter = function(pokemon) {
+        if (listePokemon.length > 0) {
+            pokemon.id = listePokemon[listePokemon.length - 1].id + 1;
+        } else {
+            pokemon.id = 0;
+        }
+        console.log(pokemon.nom, pokemon.id);
+
+        listePokemon.push(pokemon);
+        localStorage['pokemon'] = JSON.stringify(listePokemon);
+        console.log("JSON.stringify(listePokemon) : " + JSON.stringify(listePokemon));
+    }
 
 }();
