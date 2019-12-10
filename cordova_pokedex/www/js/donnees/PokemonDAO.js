@@ -7,6 +7,7 @@ var PokemonDAO = function() {
         }
     }
 
+    //Lister le pokemon
     this.lister = function() {
         if (localStorage['pokemon']) {
             listePokemon = JSON.parse(localStorage['pokemon']);
@@ -18,6 +19,11 @@ var PokemonDAO = function() {
         }
 
         return listePokemon;
+    }
+
+    //Modifier le pokemon
+    this.modifier = function(pokemon) {
+        listePokemon[pokemon.id] = pokemon;
     }
 
 }();
