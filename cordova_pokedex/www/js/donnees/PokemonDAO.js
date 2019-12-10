@@ -15,7 +15,7 @@ var PokemonDAO = function() {
 
         for (position in listePokemon) {
             var pokemon = new PokemonDAO(listePokemon[position].nom, listePokemon[position].type, listePokemon[position].pv, listePokemon[position].pc, listePokemon[position].image, listePokemon[position].son)
-            listePokemon[poisition] = pokemon
+            listePokemon[position] = pokemon
         }
 
         return listePokemon;
@@ -25,7 +25,7 @@ var PokemonDAO = function() {
     this.modifier = function(pokemon) {
         for (position in listePokemon) {
             if (listePokemon[position].id == pokemon.id) {
-                listePokemon[poisition] = pokemon;
+                listePokemon[position] = pokemon;
             }
         }
         localStorage['pokemon'] = JSON.stringify(listePokemon);
@@ -44,6 +44,16 @@ var PokemonDAO = function() {
         listePokemon.push(pokemon);
         localStorage['pokemon'] = JSON.stringify(listePokemon);
         console.log("JSON.stringify(listePokemon) : " + JSON.stringify(listePokemon));
+    }
+
+
+    //Rechercher un pokemon avec son id
+    this.recupererPokemonParId = function(id) {
+        for (position in listePokemon) {
+            if (listePokemon[position].id == id) {
+                return listePokemon[position];
+            }
+        }
     }
 
 }();
