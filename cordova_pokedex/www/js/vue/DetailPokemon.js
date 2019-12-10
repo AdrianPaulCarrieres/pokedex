@@ -32,6 +32,20 @@ var DetailPokemon = (function() {
                 }
 
             });
+            var granimInstance = new Granim({
+                element: '#canvas-basic',
+                direction: 'left-right',
+                isPausedWhenNotInView: true,
+                states : {
+                    "default-state": {
+                        gradients: [
+                            ['#ff9966', '#ff5e62'],
+                            ['#00F260', '#0575E6'],
+                            ['#e1eec3', '#f05053']
+                        ]
+                    }
+                }
+            });
             var ctx = document.getElementById('graphiquePc').getContext('2d');
             var chart = new Chart(ctx, {
 

@@ -33,21 +33,23 @@ Erreur dans l'app
 	<div class="container ">
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" ></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" ></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 			</ol>
-			<div class="carousel-inner">
-				<div class="carousel-item ">
+			<div class="carousel-inner ">
+				<div class="carousel-item active">
 					<div class="row">
 						<img src="https://via.placeholder.com/150" id="icone_pokemon" class="rounded mx-auto d-block" alt="...">
 					</div>
 					<div class="text-center" id="nom-pokemon">
 						Nom du pokemon
 					</div>
-					<div class="row">
-						<div class="col-12 text-center champ-type" id="type_pokemon">
+					<div class="canvas-interactive-wrapper">
+						<canvas id="canvas-basic"></canvas>
+						<div class=" col-12 text-center cta-wrapper">
 							type
 						</div>
+					</div>
 					</div>
 					<div class="row justify-content-center align-items-center ligne">
 						<div class="col-1 " id="boite_pc">
@@ -71,7 +73,7 @@ Erreur dans l'app
 						</div>
 					</div>
 				</div>
-				<div class="carousel-item active">
+				<div class="carousel-item ">
 					<div class="row justify-content-center align-items-center">
 						<div class="card col-8 graphique">
 							<canvas id="graphiquePv"></canvas>
