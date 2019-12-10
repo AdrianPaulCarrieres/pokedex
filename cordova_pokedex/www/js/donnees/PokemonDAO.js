@@ -23,7 +23,15 @@ var PokemonDAO = function() {
 
     //Modifier le pokemon
     this.modifier = function(pokemon) {
-        listePokemon[pokemon.id] = pokemon;
+        for (position in listePokemon) {
+            if (listePokemon[position].id == pokemon.id) {
+                listePokemon[poisition] = pokemon;
+            }
+        }
+        localStorage['pokemon'] = JSON.stringify(listePokemon);
+        console.log("JSON.stringify(listePokemon) : " + JSON.stringify(listePokemon));
     }
+
+    //
 
 }();
