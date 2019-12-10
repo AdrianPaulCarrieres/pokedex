@@ -55,5 +55,4 @@ var PokemonDAO = function() {
             }
         }
     }
-
 }();
