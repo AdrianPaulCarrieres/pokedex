@@ -1,3 +1,11 @@
+<<<<<<< HEAD
 
 ./cordova_pokedex/www/.idea/
 ./cordova_pokedex/platforms/
+=======
+cordova_pokedex/www/.idea/
+cordova_pokedex/platforms/android
+cordova_pokedex/platforms/browser
+cordova_pokedex/plugins/browser.json
+cordova_pokedex/plugins/android.json
+>>>>>>> 278e6a83ce5062beca16b8d94e68aae849f9501d
