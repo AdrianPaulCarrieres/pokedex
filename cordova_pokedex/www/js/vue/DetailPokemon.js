@@ -32,16 +32,27 @@ var DetailPokemon = (function() {
                 }
 
             });
+            type="eau";
+            var gradient1;
+            var gradient2;
+            if (type == "feu"){
+                gradient1 = ['#ff9900', '#ff5e62'];
+                gradient2 = ['#ff5e62', '#ff9900'];
+            }else if (type == "feuille"){
+                gradient1 = ['#80ED80', '#00FF00'];
+                gradient2 = ['#00FF00', '#80ED80'];
+            }else if (type == "eau"){
+                gradient1 = ['#59FFF9', '#003F3C'];
+                gradient2 = ['#003F3C', '#59FFF9'];
+            }
             var granimInstance = new Granim({
-                element: '#canvas-basic',
-                direction: 'left-right',
+                element: '#canvas-interactive',
                 isPausedWhenNotInView: true,
                 states : {
                     "default-state": {
                         gradients: [
-                            ['#ff9966', '#ff5e62'],
-                            ['#00F260', '#0575E6'],
-                            ['#e1eec3', '#f05053']
+                            gradient1,
+                            gradient2
                         ]
                     }
                 }
