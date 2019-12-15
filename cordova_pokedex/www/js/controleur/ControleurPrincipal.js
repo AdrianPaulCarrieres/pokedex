@@ -1,8 +1,8 @@
 (function() {
-    var PokemonDOA = null;
+    var pokemonDAO = null;
     var initialiser = function initialiser() {
         window.addEventListener("hashchange", naviguer);
-        pokemonDAO = new PokemonDOA();
+        pokemonDAO = new PokemonDAO();
         naviguer();
         AOS.init();
     };
@@ -10,7 +10,9 @@
     var naviguer = function() {
         var hash = window.location.hash;
         if(!hash) {
-            listePokemonVue = new ListePokemonVue();
+            var listePokemons = pokemonDAO.lister();
+            listePokemons = [];
+            listePokemonVue = new ListePokemonVue(listePokemons);
             listePokemonVue.afficher();
         }
         else if(hash.match(/^#page-ajouter-pokemon/)) {
