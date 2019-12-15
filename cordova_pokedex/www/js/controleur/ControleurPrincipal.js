@@ -24,8 +24,11 @@
             modifierPokemonVue = new ModifierPokemonVue();
             modifierPokemonVue.afficher();
         }
-        else if(hash.match(/^#page-detail-pokemon/)) {
-            detailPokemonVue = new DetailPokemon();
+        else if(hash.match(/^#page-detail-pokemon\/([0-9]+)/)) {
+            var navigation = hash.match(/^#page-detail-pokemon\/([0-9]+)/);
+            var idPokemon = navigation[1];
+
+            var detailPokemonVue = new DetailPokemon(pokemonDAO.recupererPokemonParId(idPokemon));
             detailPokemonVue.afficher();
         }
     };

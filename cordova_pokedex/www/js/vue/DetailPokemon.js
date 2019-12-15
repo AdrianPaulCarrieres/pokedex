@@ -5,10 +5,16 @@ var DetailPokemon = (function() {
     var pageDetailPokemon = document.getElementById("page-detail-pokemon").innerHTML;
 
     return function() {
-        this.afficher = function() {
+        this.afficher = function(pokemon) {
 
             elementBody = document.getElementsByTagName("body")[0];
             elementBody.innerHTML = fragmentBarreNavigationHaut + pageDetailPokemon;
+            document.getElementById("image-pokemon").setAttribute("src", pokemon.son);
+            document.getElementById("nom-pokemon").innerHTML = pokemon.nom;
+            document.getElementById("type-pokemon").innerHTML = pokemon.type;
+            document.getElementById("pc-pokemon").innerHTML = pokemon.pc;
+            document.getElementById("pv-pokemon").innerHTML = pokemon.pv;
+
             var ctx = document.getElementById('graphiquePv').getContext('2d');
             var chart = new Chart(ctx, {
 
@@ -32,7 +38,7 @@ var DetailPokemon = (function() {
                 }
 
             });
-            type="eau";
+            type= pokemon.type;
             var gradient1;
             var gradient2;
             if (type == "feu"){
