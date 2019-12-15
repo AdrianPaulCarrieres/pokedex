@@ -4,7 +4,7 @@ var AjouterPokemonVue = (function() {
     var fragmentBarreNavigationBas = document.getElementById("fragment-barre-navigation-bas").innerHTML;
     var pageAJouterPokemon = document.getElementById("page-ajouter-pokemon").innerHTML;
     
-    return function() {
+    return function(actionAjouterPokemon) {
         this.afficher = function() {
 
             elementBody = document.getElementsByTagName("body")[0];
