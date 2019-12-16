@@ -14,7 +14,7 @@ var PokemonDAO = function() {
         }
 console.log(listePokemon);
         for (position in listePokemon) {
-            var pokemon = new Pokemon(listePokemon[position].nom, listePokemon[position].type,listePokemon[position].cheminImage, listePokemon[position].pv, listePokemon[position].pc,/* listePokemon[position].son*/)
+            var pokemon = new Pokemon(listePokemon[position].nom, listePokemon[position].type,listePokemon[position].cheminImage, listePokemon[position].pv, listePokemon[position].pc,  listePokemon[position].id/* listePokemon[position].son*/)
             listePokemon[position] = pokemon
         }
 

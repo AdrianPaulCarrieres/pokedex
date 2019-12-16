@@ -22,7 +22,7 @@ var AjouterPokemonVue = (function() {
             var pv = document.getElementById("ajouter-pv").value;
             var pc = document.getElementById("ajouter-pc").value;
             console.log(nom+ type+ image+ pv+ pc);
-            var pokemon = new Pokemon(nom, type, image, pv, pc);
+            var pokemon = new Pokemon(nom, type, image, pv, pc, null);
             actionAjouterPokemon(pokemon);
         }
 
