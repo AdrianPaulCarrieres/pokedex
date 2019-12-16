@@ -10,7 +10,7 @@ var ModifierPokemonVue = (function() {
             elementBody.innerHTML = fragmentBarreNavigationHaut + pageModifierPokemon + fragmentBarreNavigationBas;
             document.getElementById("modifier-nom").value = this.pokemon.nom;
             document.getElementById("modifier-type").value = this.pokemon.type;
-            // document.getElementById("modifier-image").value = this.pokemon.cheminImage;
+            document.getElementById("chemin-image-si-nul").value = this.pokemon.cheminImage;
             document.getElementById("modifier-pv").value = this.pokemon.pv;
             document.getElementById("modifier-pc").value = this.pokemon.pc;
             document.getElementById("modifier-id").value = this.pokemon.id;
@@ -23,6 +23,9 @@ var ModifierPokemonVue = (function() {
             var nom = document.getElementById("modifier-nom").value;
             var type = document.getElementById("modifier-type").value;
             var image = document.getElementById("modifier-image").value;
+            if (image == null || image == ""){
+                image = document.getElementById("chemin-image-si-nul").value;
+            }
             var pv = document.getElementById("modifier-pv").value;
             var pc = document.getElementById("modifier-pc").value;
             var id = document.getElementById("modifier-id").value;
