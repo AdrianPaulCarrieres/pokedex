@@ -1,4 +1,4 @@
-var Cadeau = function(nom, type, cheminImage, pv, pc) {
+var Pokemon = function(nom, type, cheminImage, pv, pc) {
     this.nom = nom;
     this.type = type;
     this.cheminImage = cheminImage;

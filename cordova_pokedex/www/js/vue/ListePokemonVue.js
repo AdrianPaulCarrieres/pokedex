@@ -6,7 +6,7 @@ var ListePokemonVue = (function() {
     
     return function(listePokemons) {
         this.afficher = function() {
-
+            console.log(listePokemons);
             elementBody = document.getElementsByTagName("body")[0];
             elementBody.innerHTML = fragmentBarreNavigationHaut + pageListePokemon + fragmentBarreNavigationBas;
             liste = document.getElementById("conteneur-liste");

@@ -34,7 +34,7 @@ var PokemonDAO = function() {
 
     //Ajouter un pokemon
     this.ajouter = function(pokemon) {
-        if (listePokemon.length > 0) {
+        if (listePokemon==null || listePokemon.length > 0 ) {
             pokemon.id = listePokemon[listePokemon.length - 1].id + 1;
         } else {
             pokemon.id = 0;
@@ -55,4 +55,5 @@ var PokemonDAO = function() {
             }
         }
     }
+    initialiser();
 };
