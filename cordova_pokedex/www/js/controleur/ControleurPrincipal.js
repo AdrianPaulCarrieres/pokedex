@@ -20,7 +20,7 @@
             ajouterPokemonVue.afficher();
         }
         else if(hash.match(/^#page-modifier-pokemon\/([0-9]+)/)) {
-            var navigation = hash.match(/^#page-detail-pokemon\/([0-9]+)/);
+            var navigation = hash.match(/^#page-modifier-pokemon\/([0-9]+)/);
             var idPokemon = navigation[1];
             modifierPokemonVue = new ModifierPokemonVue(pokemonDAO.recupererPokemonParId(idPokemon), actionModifierPokemon);
             modifierPokemonVue.afficher();

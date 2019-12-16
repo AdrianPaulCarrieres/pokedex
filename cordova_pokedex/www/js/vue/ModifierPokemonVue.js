@@ -8,11 +8,12 @@ var ModifierPokemonVue = (function() {
         this.afficher = function() {
             elementBody = document.getElementsByTagName("body")[0];
             elementBody.innerHTML = fragmentBarreNavigationHaut + pageModifierPokemon + fragmentBarreNavigationBas;
-            var nom = document.getElementById("modifier-nom").value = this.pokemon.nom;
-            var type = document.getElementById("modifier-type").value = this.pokemon.type;
-            var image = document.getElementById("modifier-image").value = this.pokemon.cheminImage;
-            var pv = document.getElementById("modifier-pv").value = this.pokemon.pv;
-            var pc = document.getElementById("modifier-pc").value = this.pokemon.pc;
+            document.getElementById("modifier-nom").value = this.pokemon.nom;
+            document.getElementById("modifier-type").value = this.pokemon.type;
+            // document.getElementById("modifier-image").value = this.pokemon.cheminImage;
+            document.getElementById("modifier-pv").value = this.pokemon.pv;
+            document.getElementById("modifier-pc").value = this.pokemon.pc;
+            document.getElementById("modifier-id").value = this.pokemon.id;
             var formulaireModifier = document.getElementById("formulaire-modifier");
             formulaireModifier.addEventListener("submit", enregistrer);
         }
@@ -24,8 +25,9 @@ var ModifierPokemonVue = (function() {
             var image = document.getElementById("modifier-image").value;
             var pv = document.getElementById("modifier-pv").value;
             var pc = document.getElementById("modifier-pc").value;
+            var id = document.getElementById("modifier-id").value;
             console.log(nom+ type+ image+ pv+ pc);
-            var pokemon = new Pokemon(nom, type, image, pv, pc, null);
+            var pokemon = new Pokemon(nom, type, image, pv, pc, id);
             actionModifierPokemon(pokemon);
         }
 

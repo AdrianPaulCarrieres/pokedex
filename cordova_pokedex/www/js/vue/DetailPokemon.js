@@ -14,6 +14,8 @@ var DetailPokemon = (function() {
             document.getElementById("type-pokemon").innerHTML = pokemon.type;
             document.getElementById("pc-pokemon").innerHTML = pokemon.pc;
             document.getElementById("pv-pokemon").innerHTML = pokemon.pv;
+            document.getElementById("lien-modifier-pokemon").setAttribute("href", "#page-modifier-pokemon/"+pokemon.id);
+            console.log(document.getElementById("lien-modifier-pokemon").getAttribute("href"));
 
             var ctx = document.getElementById('graphiquePv').getContext('2d');
             var chart = new Chart(ctx, {
