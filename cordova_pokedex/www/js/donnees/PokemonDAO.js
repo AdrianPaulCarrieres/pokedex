@@ -12,9 +12,9 @@ var PokemonDAO = function() {
         if (localStorage['pokemon']) {
             listePokemon = JSON.parse(localStorage['pokemon']);
         }
-
+console.log(listePokemon);
         for (position in listePokemon) {
-            var pokemon = new PokemonDAO(listePokemon[position].nom, listePokemon[position].type, listePokemon[position].pv, listePokemon[position].pc, listePokemon[position].image, listePokemon[position].son)
+            var pokemon = new Pokemon(listePokemon[position].nom, listePokemon[position].type,listePokemon[position].cheminImage, listePokemon[position].pv, listePokemon[position].pc,/* listePokemon[position].son*/)
             listePokemon[position] = pokemon
         }
 
@@ -34,7 +34,8 @@ var PokemonDAO = function() {
 
     //Ajouter un pokemon
     this.ajouter = function(pokemon) {
-        if (listePokemon==null || listePokemon.length > 0 ) {
+        console.log(pokemon);
+        if (listePokemon.length > 0 ) {
             pokemon.id = listePokemon[listePokemon.length - 1].id + 1;
         } else {
             pokemon.id = 0;

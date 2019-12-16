@@ -11,7 +11,6 @@
         var hash = window.location.hash;
         if(!hash) {
             var listePokemons = pokemonDAO.lister();
-            listePokemons = [];
             listePokemonVue = new ListePokemonVue(listePokemons);
             listePokemonVue.afficher();
         }

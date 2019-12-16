@@ -16,12 +16,12 @@ var AjouterPokemonVue = (function() {
         var enregistrer = function(evenement){
             evenement.preventDefault();
 
-            var nom = document.getElementById("ajouter-nom");
-            var type = document.getElementById("ajouter-type");
-            var image = document.getElementById("ajouter-image");
-            var pv = document.getElementById("ajouter-pv");
-            var pc = document.getElementById("ajouter-pc");
-
+            var nom = document.getElementById("ajouter-nom").value;
+            var type = document.getElementById("ajouter-type").value;
+            var image = document.getElementById("ajouter-image").value;
+            var pv = document.getElementById("ajouter-pv").value;
+            var pc = document.getElementById("ajouter-pc").value;
+            console.log(nom+ type+ image+ pv+ pc);
             var pokemon = new Pokemon(nom, type, image, pv, pc);
             actionAjouterPokemon(pokemon);
         }
