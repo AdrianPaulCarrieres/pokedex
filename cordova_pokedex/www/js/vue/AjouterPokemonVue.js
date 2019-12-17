@@ -7,7 +7,7 @@ var AjouterPokemonVue = (function() {
     return function(actionAjouterPokemon) {
         this.afficher = function() {
             elementBody = document.getElementsByTagName("body")[0];
-            elementBody.innerHTML = fragmentBarreNavigationHaut + pageAJouterPokemon + fragmentBarreNavigationBas;
+            elementBody.innerHTML = fragmentBarreNavigationHaut + pageAJouterPokemon;
 
             var formulaireAjouter = document.getElementById("formulaire-ajouter");
             formulaireAjouter.addEventListener("submit", enregistrer);
