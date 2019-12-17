@@ -1,0 +1,133 @@
+/* BEGIN: toTheTop */
+#toTheTop {
+    cursor: pointer;
+    font-size: 25px;
+    color: red;
+    position: absolute;
+    right: 15px;
+    bottom: 0px;
+    display: none;
+}
+
+@media not all and (pointer: coarse) {
+    #toTheTop:hover { color: brown; }
+}
+/* END */
+
+/* BEGIN: accueil */
+.carte-pokemon {
+    color: black;
+}
+.carte-pokemon:hover {
+    color: black;
+    text-decoration: none;
+}
+/* END: accueil */
+
+.badge-pv {
+    font-size: 1.2rem;
+}
+
+#icone_pokemon{
+    margin-top: 20px;
+}
+
+.champ-type{
+    padding: 10px;
+    margin-top: 15px;
+    background: #34ce57;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: Arial;
+    color: white;
+}
+
+#navbar_pieds{
+    text-align: center;
+    bottom: 0px;
+    background-color: #212529;
+    height: 56px;
+}
+
+.titre{
+    padding: 10px;
+}
+
+.bouton-pokemon{
+    margin: 10px;
+}
+
+#boite_pc{
+    border: solid 2px #212529;
+    background-color: red;
+    border-right: none;
+    padding: 10px;
+    color: white;
+    border-radius: 20px 0px 0px 20px;
+}
+#boite_pc_droite{
+    border: solid 2px #212529;
+    border-left: none;
+    padding: 10px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.graphique{
+    background-color: #212529;
+    margin: 15px;
+}
+
+#canvas-interactive{
+    height: 50px;
+}
+
+#type-pokemon{
+    margin-top: -56px;
+    z-index: 1;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.ligne{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#boite_pv{
+    border: solid 2px #212529;
+    background-color: red;
+    border-right: none;
+    padding: 10px;
+    color: white;
+    border-radius: 20px 0px 0px 20px;
+}
+#boite_pv_droite{
+    border: solid 2px #212529;
+    border-left: none;
+    padding: 10px;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.boite{
+    border: 2px solid red;
+    color: red;
+    border-radius: 50px;
+    margin: 15px;
+}
+
+#bouton-son{
+    margin-bottom: 50px;
+}
+
+#emplacement_pv{
+    background-color: pink;
+}
+
+#bouton-modifier{
+    margin-top: 50px;
+}
+
+.container{
+    padding: 0;
+}

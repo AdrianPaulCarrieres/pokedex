@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/home/loicbtd/project/cours/programmation-mobile_local/projet-cordova/computequest-2019/cordova_computequest/platforms/android/CordovaLib/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/home/loicbtd/project/cours/programmation-mobile_local/projet-cordova/computequest-2019/cordova_computequest/platforms/android/CordovaLib/src/debug/jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\pokedex-2019\cordova_pokedex\platforms\android\CordovaLib\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\pokedex-2019\cordova_pokedex\platforms\android\CordovaLib\src\debug\jniLibs"/></dataSet></merger>
