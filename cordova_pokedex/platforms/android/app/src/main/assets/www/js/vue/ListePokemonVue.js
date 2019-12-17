@@ -12,7 +12,7 @@ var ListePokemonVue = (function() {
             liste = document.getElementById("conteneur-liste");
             texteListe = "";
             for (let i = 0; i < listePokemons.length; i++) {
-                texteListe+= '<div data-aos="flip-left" class="col-6 col-md-4 col-lg-3">\n' +
+                texteListe+= '<div data-aos="flip-left" class="col-12">\n' +
                     '\t\t\t\t<a href="#page-detail-pokemon/'+ listePokemons[i].id +'" class="card my-2 carte-pokemon">\n' +
                     '\t\t\t\t\t<img src="https://via.placeholder.com/150 '+ /*listePokemons[i].image +*/'" class="card-img-top" width="150" height="150" alt="...">\n' +
                     '\t\t\t\t\t<div class="card-body text-center">\n' +
