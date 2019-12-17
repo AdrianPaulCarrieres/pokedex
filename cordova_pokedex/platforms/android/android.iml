@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <module external.linked.project.id=":" external.linked.project.path="C:\pokedex-2019\cordova_pokedex\platforms\android" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" type="JAVA_MODULE" version="4">
+=======
+<module external.linked.project.id=":" external.linked.project.path="C:\Users\darkr\Documents\Cours\Cegep\Mobile\pokedex-2019\cordova_pokedex\platforms\android" external.root.project.path="$MODULE_DIR$" external.system.id="GRADLE" type="JAVA_MODULE" version="4">
+>>>>>>> dao
   <component name="FacetManager">
     <facet type="android-gradle" name="Android-Gradle">
       <configuration>
