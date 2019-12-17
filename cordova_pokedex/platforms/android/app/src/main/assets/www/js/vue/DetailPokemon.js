@@ -4,12 +4,14 @@ var DetailPokemon = (function() {
     var fragmentBarreNavigationBas = document.getElementById("fragment-barre-navigation-bas").innerHTML;
     var pageDetailPokemon = document.getElementById("page-detail-pokemon").innerHTML;
 
+    var audio = new Audio();
+
     return function(pokemon) {
         this.afficher = function() {
             console.log(pokemon);
             elementBody = document.getElementsByTagName("body")[0];
             elementBody.innerHTML = fragmentBarreNavigationHaut + pageDetailPokemon;
-            // document.getElementById("image-pokemon").setAttribute("src", pokemon.son);
+            document.getElementById("bouton-son").setAttribute("onclick", audio.jouer);
             document.getElementById("icone-pokemon").setAttribute("src", pokemon.cheminImage);
             document.getElementById("nom-pokemon").innerHTML = pokemon.nom;
             document.getElementById("type-pokemon").innerHTML = pokemon.type;

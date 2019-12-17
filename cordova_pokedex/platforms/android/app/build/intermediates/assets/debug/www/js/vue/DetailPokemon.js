@@ -9,7 +9,7 @@ var DetailPokemon = (function() {
             console.log(pokemon);
             elementBody = document.getElementsByTagName("body")[0];
             elementBody.innerHTML = fragmentBarreNavigationHaut + pageDetailPokemon;
-            // document.getElementById("image-pokemon").setAttribute("src", pokemon.son);
+            document.getElementById("image-pokemon").setAttribute("onclick", Audio.jouer);
             document.getElementById("icone-pokemon").setAttribute("src", pokemon.cheminImage);
             document.getElementById("nom-pokemon").innerHTML = pokemon.nom;
             document.getElementById("type-pokemon").innerHTML = pokemon.type;

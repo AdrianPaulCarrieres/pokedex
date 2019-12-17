@@ -1,4 +1,4 @@
-#Tue Dec 17 10:43:36 EST 2019
-base.0=C\:\\pokedex-2019\\cordova_pokedex\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Tue Dec 17 17:09:18 EST 2019
+base.0=C\:\\Users\\1936994\\Documents\\Dev Mobile\\pokedex-2019\\cordova_pokedex\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex
