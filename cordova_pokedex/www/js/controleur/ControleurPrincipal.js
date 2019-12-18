@@ -30,7 +30,8 @@
             var idPokemon = navigation[1];
             console.log(idPokemon);
             console.log(pokemonDAO.recupererPokemonParId(idPokemon));
-            var detailPokemonVue = new DetailPokemon(pokemonDAO.recupererPokemonParId(idPokemon));
+            var listePokemons = pokemonDAO.lister();
+            var detailPokemonVue = new DetailPokemon(pokemonDAO.recupererPokemonParId(idPokemon), listePokemons);
             detailPokemonVue.afficher();
         }
     };
