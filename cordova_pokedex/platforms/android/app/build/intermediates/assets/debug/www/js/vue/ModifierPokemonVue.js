@@ -18,21 +18,17 @@ var ModifierPokemonVue = (function() {
             formulaireModifier.addEventListener("submit", enregistrer);
         }
 
-        var enregistrer = function(evenement){
+        var enregistrer = function(evenement) {
             evenement.preventDefault();
             var nom = document.getElementById("modifier-nom").value;
             var type = document.getElementById("modifier-type").value;
-            var image = document.getElementById("modifier-image").value;
-            if (image == null || image == ""){
-                image = document.getElementById("chemin-image-si-nul").value;
-            }
+            var image = document.getElementById("chemin-image-si-nul").value;
             var pv = document.getElementById("modifier-pv").value;
             var pc = document.getElementById("modifier-pc").value;
             var id = document.getElementById("modifier-id").value;
-            console.log(nom+ type+ image+ pv+ pc);
+            console.log(nom + type + image + pv + pc);
             var pokemon = new Pokemon(nom, type, image, pv, pc, id);
             actionModifierPokemon(pokemon);
         }
-
     }
 })();
