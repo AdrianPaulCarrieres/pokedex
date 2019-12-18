@@ -19,6 +19,7 @@ var AjouterPokemonVue = (function() {
         }
 
         var enregistrer = function(evenement) {
+            console.log("ajouterPokemonVue -> enregistrer");
             evenement.preventDefault();
 
             var nom = document.getElementById("ajouter-nom").value;
@@ -31,13 +32,15 @@ var AjouterPokemonVue = (function() {
         }
 
 
-        function cameraTakePicture() {
+        function cameraTakePicture(evenement) {
+            evenement.preventDefault();
             navigator.camera.getPicture(onSuccess, onFail, {
-                quality: 100,
+                quality: 25,
                 destinationType: Camera.DestinationType.DATA_URL
             });
 
             function onSuccess(imageData) {
+                console.log("ajouterPokemonVue -> takePicture success");
                 image = "data:image/jpeg;base64," + imageData;
             }
 

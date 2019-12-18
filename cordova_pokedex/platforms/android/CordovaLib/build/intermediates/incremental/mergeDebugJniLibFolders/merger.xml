@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\1936994\Documents\Dev Mobile\pokedex-2019\cordova_pokedex\platforms\android\CordovaLib\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\Users\1936994\Documents\Dev Mobile\pokedex-2019\cordova_pokedex\platforms\android\CordovaLib\src\debug\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Users\darkr\Documents\Cours\Cegep\Mobile\pokedex-2019\cordova_pokedex\platforms\android\CordovaLib\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\Users\darkr\Documents\Cours\Cegep\Mobile\pokedex-2019\cordova_pokedex\platforms\android\CordovaLib\src\debug\jniLibs"/></dataSet></merger>
