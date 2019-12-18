@@ -44,15 +44,24 @@ var DetailPokemon = (function() {
             type= pokemon.type;
             var gradient1;
             var gradient2;
-            if (type == "feu"){
+            if (type.toUpperCase() == "FEU"){
                 gradient1 = ['#ff9900', '#ff5e62'];
                 gradient2 = ['#ff5e62', '#ff9900'];
-            }else if (type == "feuille"){
+            }else if (type.toUpperCase == "FEUILLE"){
                 gradient1 = ['#80ED80', '#00FF00'];
                 gradient2 = ['#00FF00', '#80ED80'];
-            }else if (type == "eau"){
+            }else if (type.toUpperCase() == "EAU"){
                 gradient1 = ['#59FFF9', '#003F3C'];
                 gradient2 = ['#003F3C', '#59FFF9'];
+            }else if (type.toUpperCase() == "ACIER"){
+                gradient1 = ['#35352E', '#EEEEEE'];
+                gradient2 = ['#EEEEEE', '#35352E'];
+            }else if (type.toUpperCase() == "ELECTRIQUE" || type.toUpperCase() == "ÉLECTRIQUE"){
+                gradient1 = ['#FFDD00', '#35352E'];
+                gradient2 = ['#35352E', '#FFDD00'];
+            }else if (type.toUpperCase() == "COMBAT"){
+                gradient1 = ['#BD0707', '#35352E'];
+                gradient2 = ['#35352E', '#BD0707'];
             }
             var granimInstance = new Granim({
                 element: '#canvas-interactive',
