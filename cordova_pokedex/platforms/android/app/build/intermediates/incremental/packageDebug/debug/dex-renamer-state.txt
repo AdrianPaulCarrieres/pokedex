@@ -1,0 +1,4 @@
+#Wed Dec 18 14:07:41 EST 2019
+base.0=C\:\\Users\\darkr\\Documents\\Cours\\Cegep\\Mobile\\pokedex-2019\\cordova_pokedex\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
