@@ -1,10 +1,12 @@
 # Pokedex
 
+## Lien vidéo : https://drive.google.com/file/d/16b0KUdpLq_pFhxQw2Nfhb084AFDc4-pM/view?usp=sharing
+
 ## Équipe
-Estevan GAY
-Loïc BERTRAND
-Louis PASCUZZI
-Adrian-Paul CARRIÈRES
+* Estevan GAY
+* Loïc BERTRAND
+* Louis PASCUZZI
+* Adrian-Paul CARRIÈRES
 
 ## Modèle Pokemon
 Un pokémon possède :
