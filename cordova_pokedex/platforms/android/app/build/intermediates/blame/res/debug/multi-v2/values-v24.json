@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\darkr\\Documents\\Cours\\Cegep\\Mobile\\pokedex-2019\\cordova_pokedex\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\darkr\\.gradle\\caches\\transforms-2\\files-2.1\\145f83b8137b7e44df977ec9b768f486\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\darkr\\.gradle\\caches\\transforms-2\\files-2.1\\f09e09e7a1a9b6c5697c87c390be8144\\support-media-compat-27.1.1\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
